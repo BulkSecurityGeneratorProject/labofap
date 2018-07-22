@@ -1,0 +1,11 @@
+version: '2'
+services:
+    labofapapi-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/labofapapi/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=labofapapi
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

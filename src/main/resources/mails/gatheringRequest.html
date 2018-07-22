@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:text="#{email.gathering.title}">Demande de ramassage</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" th:href="@{|${baseUrl}/favicon.ico|}" />
+    </head>
+    <body>
+        <p>
+            Bonjour
+        </p>
+        <p>
+            Merci d'effectuer un ramassage
+        </p>
+        <p>
+            <span th:text="#{email.gathering.text}">Cordialement, </span>
+            <br/>
+            <em th:text="${dentiste}"></em>
+        </p>
+    </body>
+</html>
